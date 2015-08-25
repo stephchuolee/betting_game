@@ -38,7 +38,7 @@ $('#something').click(function() {
           alert("Bet must be between $5 and $10. Bet again.")
         } else { var guess = +$('#guess').val()
             if (guess == number) {
-            userMoney = userMoney + (bet * 2);
+            userMoney = userMoney - bet + (bet * 2);
 
 
           } else if (guess == number - 1 || guess == number + 1){
